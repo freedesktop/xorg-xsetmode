@@ -27,6 +27,5 @@ xsetmode_LDADD = $(DEP_LIBS)
 xsetmode_SOURCES =	\
         xsetmode.c
 
-dist_man_MANS = \
+dist_man1_MANS = \
         xsetmode.man
-
