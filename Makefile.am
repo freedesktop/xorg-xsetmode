@@ -21,8 +21,8 @@
 
 bin_PROGRAMS = xsetmode
 
-xsetmode_CFLAGS = $(DEP_CFLAGS)
-xsetmode_LDADD = $(DEP_LIBS)
+xsetmode_CFLAGS = $(XSETMODE_CFLAGS)
+xsetmode_LDADD = $(XSETMODE_LIBS)
 
 xsetmode_SOURCES =	\
         xsetmode.c
