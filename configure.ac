@@ -22,7 +22,7 @@ dnl
 dnl Process this file with autoconf to create configure.
 
 AC_PREREQ([2.57])
-AC_INIT(xsetmode,[7.0], [xorg@freedesktop.org],xsetmode)
+AC_INIT(xsetmode,[0.99.0], [https://bugs.freedesktop.org/enter_bug.cgi?product=xorg],xsetmode)
 AM_INIT_AUTOMAKE([dist-bzip2])
 AM_MAINTAINER_MODE
 
@@ -35,5 +35,7 @@ AC_PROG_INSTALL
 PKG_CHECK_MODULES(XSETMODE, xi x11)
 AC_SUBST(XSETMODE_CFLAGS)
 AC_SUBST(XSETMODE_LIBS)
+
+XORG_RELEASE_VERSION
 
 AC_OUTPUT([Makefile])
