@@ -30,7 +30,7 @@
 #include <X11/Xproto.h>
 #include <X11/extensions/XInput.h>
 
-int           event_type;
+static int event_type;
 
 static int StrCaseCmp(char *s1, char *s2)
 {

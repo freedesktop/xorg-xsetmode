@@ -18,3 +18,7 @@ stamp-h1
 xsetmode
 xsetmode.1
 *~
+*.o
+xsetmode-*.tar.*
+ChangeLog
+tags
