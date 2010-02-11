@@ -21,7 +21,7 @@
 
 bin_PROGRAMS = xsetmode
 
-AM_CFLAGS = $(XSETMODE_CFLAGS)
+AM_CFLAGS = $(XSETMODE_CFLAGS) $(CWARNFLAGS)
 xsetmode_LDADD = $(XSETMODE_LIBS)
 
 xsetmode_SOURCES =	\
