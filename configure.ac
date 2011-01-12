@@ -36,7 +36,6 @@ AM_CONFIG_HEADER(config.h)
 
 # Checks for pkg-config packages
 PKG_CHECK_MODULES(XSETMODE, xi x11)
-AC_SUBST(XSETMODE_LIBS)
 
 
 AC_OUTPUT([Makefile])
