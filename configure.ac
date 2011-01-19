@@ -38,4 +38,7 @@ AC_CONFIG_HEADERS([config.h])
 PKG_CHECK_MODULES(XSETMODE, xi x11)
 
 
-AC_OUTPUT([Makefile])
+AC_CONFIG_FILES([
+	Makefile
+	man/Makefile])
+AC_OUTPUT
