@@ -62,17 +62,12 @@ main(int argc, char * argv[])
   char          **extensions;
   XDeviceInfo   *devices;
   Display       *dpy;
-  int		list = 0;
   
   if (argc != 3) {
     fprintf(stderr, "usage : %s <device name> (ABSOLUTE|RELATIVE)\n", argv[0]);
     exit(1);
   }
 
-  if (strcmp(argv[1], "-l") == 0) {
-    list = 1;
-  }
-  
   dpy = XOpenDisplay(NULL);
 
   if (!dpy) {
@@ -125,11 +120,6 @@ main(int argc, char * argv[])
       exit(1);
     }
   
-  if (list) {
-    exit(0);
-  }
-  else {
-    fprintf(stderr, "Extended device %s not found\n", argv[1]);
-    exit(1);
-  }
+  fprintf(stderr, "Extended device %s not found\n", argv[1]);
+  exit(1);
 }
