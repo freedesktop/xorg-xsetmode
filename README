@@ -1,25 +1,17 @@
-Xsetmode sets the mode of an XInput device to either absolute or relative.
+*************** THIS PROGRAM IS NO LONGER MAINTAINED BY X.ORG ***************
+
+xsetmode sets the mode of an XInput device to either absolute or relative.
+
+xsetmode still works on devices that support multiple mode, the hooks are
+still there so functionally there's nothing wrong with it, but it is no
+longer actively maintained as the xinput program has replaced it, with:
+  xinput --set-mode "device name" ABSOLUTE
+
+Since xinput is actively maintained, X.Org recommends using that instead.
+
+*****************************************************************************
 
 All questions regarding this software should be directed at the
 Xorg mailing list:
 
         http://lists.freedesktop.org/mailman/listinfo/xorg
-
-Please submit bug reports to the Xorg bugzilla:
-
-        https://bugs.freedesktop.org/enter_bug.cgi?product=xorg
-
-The master development code repository can be found at:
-
-        git://anongit.freedesktop.org/git/xorg/app/xsetmode
-
-        http://cgit.freedesktop.org/xorg/app/xsetmode
-
-For patch submission instructions, see:
-
-	http://www.x.org/wiki/Development/Documentation/SubmittingPatches
-
-For more information on the git code manager, see:
-
-        http://wiki.x.org/wiki/GitPage
-
